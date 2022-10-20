@@ -28,6 +28,8 @@ function App () {
         };
 
         $("#espresso-menu-list").insertAdjacentHTML("beforeend", menuItemTemplate(espressoMenuName)) ;
+        const menuCounter =  $("#espresso-menu-list").querySelectorAll("li").length;
+        $(".menu-count").innerText = `총 ${menuCounter}개`
     }})
 
 }
